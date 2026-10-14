@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Градиент фона под цвет интерфейса командного центра -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14181d"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
+    </linearGradient>
+
+    <!-- Неоновый тактический акцент -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Закругленная основа иконки -->
+  <rect width="64" height="64" rx="14" fill="url(#bg-grad)"/>
+  
+  <!-- Тонкая тактическая рамка -->
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#26313d" stroke-width="1.5"/>
+
+  <!-- Геометрический шеврон / монограмма "K" (символ щита и точности) -->
+  <g id="tactical-k">
+    <!-- Вертикальный пилон -->
+    <path d="M 19 15 L 26 15 L 26 49 L 19 49 Z" fill="#f8fafc"/>
+    
+    <!-- Верхняя диагональ шеврона -->
+    <path d="M 28 32 L 39 17 L 48 17 L 34 35 Z" fill="#f8fafc"/>
+    
+    <!-- Нижняя диагональ с акцентным цветом прицельных систем -->
+    <path d="M 33 34 L 46 49 L 37 49 L 27 38 Z" fill="url(#cyan-glow)"/>
+    
+    <!-- Угловой тактический маркер-прицел -->
+    <path d="M 44 14 L 50 14 L 50 20" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
